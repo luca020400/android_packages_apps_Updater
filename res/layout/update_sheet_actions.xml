@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="8dp"
+    android:paddingTop="8dp">
+
+    <LinearLayout
+        android:id="@+id/sheet_export_update"
+        style="@style/AppTheme.BottomSheetLayoutEntry">
+
+        <ImageView
+            style="@style/AppTheme.BottomSheetLayoutIcon"
+            android:src="@drawable/ic_save"
+            android:tint="@color/bottom_sheet_icon" />
+
+        <TextView
+            style="@style/AppTheme.BottomSheetLayoutLabel"
+            android:text="@string/menu_export_update" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sheet_delete_update"
+        style="@style/AppTheme.BottomSheetLayoutEntry"
+        android:gravity="center_vertical">
+
+        <ImageView
+            style="@style/AppTheme.BottomSheetLayoutIcon"
+            android:src="@drawable/ic_delete"
+            android:tint="@color/bottom_sheet_icon" />
+
+        <TextView
+            style="@style/AppTheme.BottomSheetLayoutLabel"
+            android:layout_width="match_parent"
+            android:text="@string/menu_delete_update" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sheet_copy_url"
+        style="@style/AppTheme.BottomSheetLayoutEntry">
+
+        <ImageView
+            style="@style/AppTheme.BottomSheetLayoutIcon"
+            android:src="@drawable/ic_content_copy"
+            android:tint="@color/bottom_sheet_icon" />
+
+        <TextView
+            style="@style/AppTheme.BottomSheetLayoutLabel"
+            android:text="@string/menu_copy_url" />
+    </LinearLayout>
+</LinearLayout>
